@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sabor & Tradición - Restaurante</title>
+  <!-- Tailwind CSS CDN para estilos rápidos y modernos -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans min-h-screen flex flex-col">
+
+  <!-- Encabezado / Navegación -->
+  <header class="bg-red-800 text-white shadow-lg sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex flex-col sm:flex-row justify-between items-center gap-4">
+      <h1 id="empresa-nombre" class="text-2xl font-bold tracking-wide">Sabor & Tradición</h1>
+      <nav class="space-x-6 text-sm font-medium">
+        <a href="#inicio" class="hover:text-amber-300 transition">Inicio</a>
+        <a href="#promociones" class="hover:text-amber-300 transition">Promociones</a>
+        <a href="#menu" class="hover:text-amber-300 transition">Menú</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero / Información General de la Empresa -->
+  <section id="inicio" class="bg-gradient-to-r from-red-900 to-red-700 text-white py-12 px-4 text-center shadow-inner">
+    <div class="max-w-3xl mx-auto space-y-4">
+      <h2 id="hero-titulo" class="text-4xl font-extrabold">Cargando restaurante...</h2>
+      <p id="empresa-descripcion" class="text-red-100 text-lg leading-relaxed"></p>
+      
+      <div class="pt-4 flex flex-wrap justify-center gap-6 text-sm text-amber-200 font-medium">
+        <span>📍 <span id="empresa-ubicacion">--</span></span>
+        <span>📞 <span id="empresa-telefono">--</span></span>
+        <span>🕒 <span id="empresa-horario">--</span></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contenido Principal -->
+  <main class="max-w-7xl mx-auto px-4 py-10 space-y-12 flex-grow w-full">
+
+    <!-- Sección Promociones -->
+    <section id="promociones">
+      <h3 class="text-2xl font-bold text-gray-900 mb-6 border-b-2 border-red-800 pb-2 flex items-center gap-2">
+        🔥 Promociones Activas
+      </h3>
+      <div id="promociones-container" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <p class="text-gray-500">Cargando promociones...</p>
+      </div>
+    </section>
+
+    <!-- Sección Catálogo / Menú -->
+    <section id="menu">
+      <h3 class="text-2xl font-bold text-gray-900 mb-6 border-b-2 border-red-800 pb-2 flex items-center gap-2">
+        🍽️ Nuestro Menú
+      </h3>
+      
+      <!-- Categorías (Filtros) -->
+      <div id="categorias-container" class="flex flex-wrap gap-2 mb-8">
+        <p class="text-gray-500">Cargando categorías...</p>
+      </div>
+
+      <!-- Tarjetas de Platillos -->
+      <div id="menu-container" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <p class="text-gray-500 col-span-full">Cargando platillos...</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="bg-gray-900 text-gray-400 text-center py-6 text-sm">
+    <p>&copy; 2026 Sabor & Tradición. Todos los derechos reservados.</p>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
